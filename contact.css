@@ -1,0 +1,122 @@
+  /* * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #008080, #000000);
+    }
+*/
+#search-bar {
+      
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+  }
+  .contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    animation: fadeIn 1.5s ease-in-out;
+    object-position: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #008080, #000000);
+  }
+
+  .contact-form h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    outline: none;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #008080;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .form-group label {
+    position: absolute;
+    top: 50%;
+    left: 0.8rem;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .form-group input:focus + label,
+  .form-group input:not(:placeholder-shown) + label,
+  .form-group textarea:focus + label,
+  .form-group textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 0.85rem;
+    color: #00ffff;
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .submit-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #004d4d, #000000);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  .submit-btn:hover {
+    background: linear-gradient(135deg, #008080, #003333);
+    transform: scale(1.05);
+  }
+
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

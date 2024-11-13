@@ -1,0 +1,120 @@
+<! DOCTYPE html>
+<html>
+<head>
+<title>Liqueside</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="stalin.css">
+<link rel="stylesheet" href="river.css">
+<link re="stylesheet"  href="about.css">
+<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+<nav class="navbar">
+  <a href="#" class="navbar-brand">LIQUESIDE</a>
+  <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+  <div class="navbar-menu" id="navbarMenu">
+    
+    <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+      <a href="#"><i class="fa-solid fa-book"></i>About</a>
+      <a href="#photos"><i class="fa-regular fa-image"></i>Photos</a>
+      <a href="#search"><i class="fa-brands fa-searchengin"></i>Search</a>
+      <a href="#contact"><i class="fa-regular fa-address-card"></i>Contact Us</a>
+  </div>
+</nav>
+
+<div class="header-box">
+  <h1>LIQUISIDE</h1>
+  <p>Discover the world's beautiful rivers and waterfalls</p>
+  </div>
+  <div class="">
+  <img src="image7.jpg" alt="Image 7" />
+  </div>
+<br><br>
+<!--this is search bar-->
+<div class="container" id="#saerch">
+<h1 align="center">Search for Top <br> Waterfalls and Rivers</h1>
+<br><br>
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search for a river or waterfall.." onkeyup="filterItems()">
+  </div>
+  
+  <div id="resultList" class="result-list">
+    <!-- Results will be dynamically inserted here -->
+  </div>
+</div>
+<!--this is scroll bar for images-->
+<h1 class="undo" id="photos">Photos</h1>
+<div class="carousel-container" >
+  <div class="carousel">
+    <div class="item active">
+      <img src="image1.jpg" alt="Image 1" />
+      <p class="caption">Indian river</p>
+    </div>
+    <div class="item">
+      <img src="image2.jpg" alt="Image 2" />
+      <p class="caption">paris river</p>
+    </div>
+    <div class="item">
+      <img src="image3.jpg" alt="Image 3" />
+      <p class="caption">china river</p>
+    </div>
+    <div class="item">
+      <img src="image4.jpg" alt="Image 4" />
+      <p class="caption">europe river</p>
+    </div>
+    <div class="item">
+      <img src="image6.jpg" alt="Image 5" />
+      <p class="caption">Nile river</p>
+    </div>
+    <div class="item">
+      <img src="image5.jpg" alt="Image 6" />
+      <p class="caption">Australia river</p>
+    </div>
+  </div>
+  <button class="btn prev">Prev</button>
+  <button class="btn next">Next</button>
+  <div class="dots"></div>
+</div>
+<br><br>
+<center id="contact">
+<form class="contact-form" id="search_bar" action="http://api.web3forms.com/submit" method="POST">
+  <h2>Contact Us</h2>
+  <div class="form-group">
+    <input type="hidden" name="access_key" value="184562aa-b21a-4fc0-bb39-f1bf0a3ee47c">
+    <input type="text" id="name" required placeholder=" " />
+    <label for="name">Name</label>
+  </div>
+  <div class="form-group">
+    <input type="email" id="email" required placeholder=" " />
+    <label for="email">Email</label>
+  </div>
+  <div class="form-group">
+    <input type="tel" id="phone" required placeholder=" " />
+    <label for="phone">Phone</label>
+  </div>
+  <div class="form-group">
+    <textarea id="message" required placeholder=" "></textarea>
+    <label for="message">Message</label>
+  </div>
+  <button type="submit" class="submit-btn">Send Message</button>
+</form>
+</center>
+
+
+<!-- JavaScript for toggling menu -->
+<script>
+  function toggleMenu() {
+      const menu = document.getElementById("navbarMenu");
+      menu.classList.toggle("active");
+  }
+</script>
+
+<script src="sagar.js"></script>
+<script src="script.js"></script>
+<br><br>
+<footer class="footer">
+  <p>&copy; 2024 Liquidside - All rights reserved</p>
+</footer>
+</body>
+<html>
